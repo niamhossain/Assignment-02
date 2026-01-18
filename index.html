@@ -11,11 +11,22 @@
 *{
     font-family: "Inter", sans-serif;
 }
+@keyframes bip {
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+.bip{
+    animation: bip 1s ease-in-out 0s infinite alternate;
+}
 </style>
 </head>
-<body class="max-w-7xl mx-auto bg-[url('./assets/hero-bg.png')] min-h-screen bg-cover bg-center">
-    <header class="text-white">
-        <nav class="grid grid-cols-3 items-center py-6 place-items-center ">
+<body class="">
+    <header class="text-white bg-[url(./assets/hero-bg.png)] min-h-screen bg-center bg-no-repeat bg-cover">
+        <nav class="grid grid-cols-3 items-center py-6 place-items-center max-w-7xl mx-auto">
             <h1 class="text-5xl font-bold">Tech<span class="bg-gradient-to-b from-purple-700 via-pink-600 to-orange-300 bg-clip-text
                  text-transparent">Wave</span></h1>
             <ul class="flex gap-8 justify-center text font-medium">
@@ -27,8 +38,10 @@
                 <button class="bg-gradient-to-l rounded-full from-purple-700 via-pink-600 to-orange-400 pt-3 pb-3 pl-4 pr-4">Subscribe <i class="fa-solid fa-arrow-down fa-rotate-270"></i> </button>
             </p>
         </nav>
-        <section>
-
+        <hr class="border-purple-950 max-w-screen">
+        <section class="banner">
+            <img src="./assets/hero-circle.png" alt="" class="mx-auto relative top-24 bip">
+            <img src="./assets/microphone.png" alt="microphone pic" class="mx-auto relative bottom-44">
         </section>
     </header>
     <main>
