@@ -35,6 +35,9 @@
 .card-bg{
     background-color: rgba(53, 17, 101, 0.4);
 }
+*>button{
+    cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -49,13 +52,13 @@
             </ul>
             <p>
                 <button class="max-[576px]:hidden bg-gradient-to-l rounded-full from-purple-700 via-pink-600 to-orange-400 pt-3 pb-3 pl-4 pr-4">Subscribe <i class="fa-solid fa-arrow-down fa-rotate-270"></i> </button>
-                <img src="./assets/hamburger-menu.png" alt="" class="min-[576px]:hidden">
+                <img src="./assets/hamburger-menu.png" alt="" class="min-[576px]:hidden hover:">
             </p>
         </nav>
         <!-- Banner Section -->
-        <section class="relaative bg-[url('./assets/hero-bg.png')] min-[576px]:min-h-screen bg-no-repeat max-[576px]:bg-contain text-center max-[576px]:bg-[position:0%_30%] bg-cover bg-center">
+        <section class="bg-[url('./assets/hero-bg.png')] min-[576px]:min-h-screen bg-no-repeat max-[576px]:bg-contain text-center max-[576px]:bg-[position:0%_30%] bg-cover bg-center">
             <img src="./assets/hero-circle.png" alt="" class="mx-auto min-[576px]:relative min-[576px]:top-40 bip max-[576px]:scale-50 max-[576]:absolute">
-            <img src="./assets/microphone.png" alt="microphone pic" class="mx-auto min-[576px]:relative min-[576px]:bottom-28 max-[576px]:scale-50 max-[576px]:absolute max-[576px]:top-40 max-[576px]:left-1/2 max-[576px]:-translate-x-15">
+            <img src="./assets/microphone.png" alt="microphone pic" class="mx-auto min-[576px]:relative min-[576px]:bottom-28 max-[576px]:scale-50 max-[576px]:absolute max-[576px]:top-40 max-[576px]:left-1/2 max-[576px]:-translate-x-1/2">
             <button class="bg-green-400 text-black px-4 py-2 rounded-full font-semibold text-xl min-[576px]:relative min-[576px]:bottom-88 min-[576px]:left-24 max-[576px]:scale-50 bottom-[420px] left-[60px] shadow-[0_3px_12px_rgba(0,255,136,0.5)] max-[576px]:absolute max-[576px]:h-12 max-[576px]:top-40 max-[576px]:left-1/2">New</button>
             <h1 class="min-[576px]:pt-10 text-6xl font-bold">TechWave</h1>
             <p class="opacity-80 pt-2">Your daily dose of tech insights, productivity hacks, and personal growth</p>
@@ -132,9 +135,9 @@ Join thousands of young professionals and tech enthusiasts who start their day w
          </section>
 
          <!-- Featured Episodes Section -->
-          <section class="text-white text-center mx-auto purple pb-30">
-            <h1 class="min-[576px]:max-w-7xl mx-auto text-5xl font-bold pt-32 pb-16">Featured Episodes</h1>
-            <div class="grid grid-cols-3 min-[576px]:max-w-7xl mx-auto gap-8">
+          <section class="text-white text-center mx-auto purple min-[576px]:pb-30 max-[576px]:px-5">
+            <h1 class="max-w-7xl mx-auto text-5xl font-bold pt-32 pb-16 max-[576px]:text-3xl">Featured Episodes</h1>
+            <div class="grid grid-cols-3 min-[576px]:max-w-7xl mx-auto gap-8 max-[576px]:grid-cols-1">
                 <div class="card-bg rounded-3xl text-left">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/2f5NHArhhQ0?si=0sJYDGFpK9w8cwx3&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-t-3xl w-full h-56"></iframe>
                     <div class="p-6">
@@ -163,14 +166,14 @@ Join thousands of young professionals and tech enthusiasts who start their day w
           </section>
 
           <!-- Meet the host section -->
-           <section class="text-white text-center mx-auto purple pb-32">
+           <section class="text-white text-center mx-auto purple pb-32 max-[576px]:px-5">
             <h1 class="min-[576px]:max-w-7xl mx-auto text-5xl font-bold pt-32 pb-16">Meet The Host</h1>
-            <div class="card-bg min-[576px]:max-w-7xl mx-auto flex rounded-3xl text-left gap-6">
-                    <img src="./assets/host.png" alt="picture of the host" class="py-10 pl-10">
+            <div class="card-bg min-[576px]:max-w-7xl mx-auto flex rounded-3xl text-left gap-6 max-[576px]:flex-col">
+                    <img src="./assets/host.png" alt="picture of the host" class="py-10 pl-10 max-[576px]:w-60 max-[576px]:mx-auto">
                     <div>
-                        <h2 class="font-bold text-3xl pt-12">Alex Kumar</h2>
-                        <p class="opacity-60 leading-6 py-4 mr-10">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
-                        <p class="flex gap-2 h-10">
+                        <h2 class="font-bold text-3xl pt-12 max-[576px]:text-center">Alex Kumar</h2>
+                        <p class="opacity-60 leading-6 py-4 mr-10 max-[576px]:text-center max-[576px]:pl-10">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.</p>
+                        <p class="flex gap-2 h-10 max-[576px]:justify-center max-[576px]:mb-6">
                             <img src="./assets/linkedin.png" alt="" class="border border-purple-900 p-3 rounded-full overflow-hidden">
                             <img src="./assets/x.png" alt="" class="border border-purple-900 p-3 rounded-full overflow-hidden">
                             <img src="./assets/instagram.png" alt="" class="border border-purple-900 p-3 rounded-full overflow-hidden">
@@ -180,17 +183,17 @@ Join thousands of young professionals and tech enthusiasts who start their day w
             </div>
            </section>
     </main>
-    <footer class="bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat min-h-[412px] bg-cover text-white text-center">
+    <footer class="bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat min-h-[412px] text-white text-center bg-cover">
         <h1 class="text-6xl font-bold pt-32">Tech<span class="bg-gradient-to-b from-purple-700 via-pink-600 to-orange-300 bg-clip-text
                  text-transparent">Wave</span></h1>
-                 <div class="grid grid-cols-4 justify-items-center w-3xl mx-auto pt-6 opacity-60">
-                    <div class="flex gap-2"><img src="./assets/spotify.png" alt="" class="h-6 w-6">
+                 <div class="max-[576px]:grid-cols-2 grid grid-cols-4 justify-items-center pt-6 opacity-60 min-[576px]:w-2xl mx-auto max-[576px]:w-78">
+                    <div class="flex gap-2 max-[576px]:pb-4"><img src="./assets/spotify.png" alt="" class="h-5 w-5">
                     <p>Spotify</p></div>
-                    <div class="flex gap-2"><img src="./assets/apple-podcast.png" alt="" class="h-6 w-6">
+                    <div class="flex gap-2 max-[576px]:pb-4"><img src="./assets/apple-podcast.png" alt="" class="h-5 w-5">
                     <p>Apple Podcasts</p></div>
-                    <div class="flex gap-2"><img src="./assets/youtube-podcast.png" alt="" class="h-6 w-6">
+                    <div class="flex gap-2"><img src="./assets/youtube-podcast.png" alt="" class="h-5 w-5">
                     <p>Youtube</p></div>
-                    <div class="flex gap-2"><img src="./assets/twitter.png" alt="" class="h-6 w-6">
+                    <div class="flex gap-2"><img src="./assets/twitter.png" alt="" class="h-5 w-5">
                     <p>Twitter</p></div>
                  </div>
                  <p class="opacity-60 pt-8">
