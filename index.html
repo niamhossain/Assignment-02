@@ -46,6 +46,29 @@
     transform: scale(1.2) rotate(10deg);
     transition: 0.7s;
 }
+.bg-img{
+    background-image: url(./assets/footer-bg.png);
+    background-position: center center;
+    background-size: 100% 70vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+    .bg-img{
+            background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    }    
+}
+@media screen and (min-width: 576px) {
+    .bg-img{
+            background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    }    
+}
 </style>
 </head>
 <body>
@@ -191,7 +214,9 @@ Join thousands of young professionals and tech enthusiasts who start their day w
             </div>
            </section>
     </main>
-    <footer class="bg-[url(./assets/footer-bg.png)] bg-center bg-no-repeat min-h-[412px] text-white text-center bg-cover">
+    
+    <!-- Footer section -->
+    <footer class="text-white text-center bg-img">
         <h1 class="text-6xl font-bold pt-32">Tech<span class="bg-gradient-to-b from-purple-700 via-pink-600 to-orange-300 bg-clip-text
                  text-transparent">Wave</span></h1>
                  <div class="max-[576px]:grid-cols-2 grid grid-cols-4 justify-items-center pt-6 opacity-60 min-[576px]:w-2xl mx-auto max-[576px]:w-78">
